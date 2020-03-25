@@ -8,7 +8,7 @@ class RegistrationPage(BasePage):
 
     def __init__(self, driver):
         super().__init__(driver)
-        self.fake = Faker(["en_GB"])  # Init
+        self.fake = Faker(["en_GB"])  # Localised to UK addresses and numbers 
 
     # Contact Information
     first_name_field = (By.NAME, "firstName")
