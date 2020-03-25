@@ -1,9 +1,7 @@
 from features.pages.base_page import BasePage
 from selenium.webdriver.common.by import By
-from behave import given, when, then
-from faker import Faker
 from selenium.webdriver.support.ui import Select
-
+from faker import Faker
 
 class RegistrationPage(BasePage):
     """ Methods and elements on the new Reg Page as seen here: http://newtours.demoaut.com/mercuryregister.php)"""
@@ -64,7 +62,6 @@ class RegistrationPage(BasePage):
         country_dropdown = Select(self.driver.find_element(*RegistrationPage.country_dropdown))
         country_dropdown.select_by_value(RegistrationPage.countries[country])
 
-    @when("the user sets their username as {username}")
     def set_username(self, username):
         self.driver.find_element(*RegistrationPage.username_field).send_keys(username)
 
