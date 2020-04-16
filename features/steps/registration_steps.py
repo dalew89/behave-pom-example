@@ -92,7 +92,7 @@ def step_impl(context, username, password, confirmed_password):  # Combine the l
     When the user chooses {username} as their username
     When the user chooses {password} as their password
     When the user confirms their password with {confirmed_password}
-    ''')
+    '''.format(username=username, password=password, confirmed_password=confirmed_password))
 
 
 @then("the account will be created successfully")
