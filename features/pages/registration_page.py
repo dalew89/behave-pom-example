@@ -3,6 +3,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import Select
 from faker import Faker
 
+
 class RegistrationPage(BasePage):
     """ Methods and elements on the new Reg Page as seen here: http://newtours.demoaut.com/mercuryregister.php)"""
 
